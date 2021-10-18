@@ -1,0 +1,254 @@
+.gg-terminal {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    background: #fff;
+}
+.gg-terminal::after,
+.gg-terminal::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-terminal::before {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 3px
+}
+.gg-terminal::after {
+    width: 4px;
+    height: 2px;
+    background: currentColor;
+    top: 10px;
+    left: 11px
+}
+
+
+.gg-chart {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    background: #fff;
+}
+.gg-chart::after,
+.gg-chart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid;
+    box-sizing: border-box
+}
+.gg-chart::before {
+    border-top-right-radius: 100px;
+    right: -2px;
+    top: -2px;
+    width: 8px;
+    height: 8px
+}
+.gg-chart::after {
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+    border-right-color: transparent;
+    left: -10px;
+    transform: rotate(-45deg)
+}
+
+.gg-smartphone-chip {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 6px double;
+    border-radius: 3px;
+    background: #fff;
+}
+.gg-smartphone-chip::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    left: -3px;
+    top: -9px;
+    background: currentColor;
+    box-shadow:
+        4px 0 0,
+        8px 0 0,
+        0 20px 0,
+        4px 20px 0,
+        -6px 6px 0,
+        14px 6px 0,
+        14px 10px 0,
+        14px 14px 0,
+        -6px 10px 0,
+        -6px 14px 0,
+        8px 20px 0
+}
+
+.gg-website {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 18px;
+    border: 2px solid;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0;
+    background: #fff;
+}
+.gg-website::after,
+.gg-website::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    top: 2px
+}
+.gg-website::before {
+    background: currentColor;
+    left: 2px;
+    box-shadow: 0 4px 0,0 8px 0;
+    border-radius: 3px;
+    height: 2px
+}
+.gg-website::after {
+    height: 10px;
+    border: 2px solid;
+    right: 2px;
+    border-radius: 1px
+}
+
+
+.gg-designmodo {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 16px;
+    background:
+        linear-gradient( to left,
+            currentColor 5px,transparent 0)
+            no-repeat right 3px/8px 3px #fff;
+}
+.gg-designmodo::after,
+.gg-designmodo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    border-radius: 10px
+}
+.gg-designmodo::after {
+    width: 14px;
+    height: 14px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid;
+    left: 3px;
+    bottom: 0
+}
+
+.gg-ereader {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 18px;
+    border: 2px solid;
+    border-radius: 3px;
+    background: #fff;
+}
+.gg-ereader::after,
+.gg-ereader::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 18px;
+    right: 9px;
+    top: -2px;
+    background: currentColor
+}
+.gg-ereader::after {
+    width: 5px;
+    height: 2px;
+    box-shadow:0 4px 0,0 8px 0;
+    top: 2px;
+    right: 2px
+}
+
+
+.gg-heart,
+.gg-heart::after {
+    border: 2px solid;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 10px;
+    height: 8px;
+    border-bottom: 0;
+    background: red;
+}
+.gg-heart {
+    box-sizing: border-box;
+    position: relative;
+    transform:
+        translate(
+            calc(-10px / 2 * var(--ggs,1)),
+            calc(-6px / 2 * var(--ggs,1))
+        )
+        rotate(-45deg)
+        scale(var(--ggs,1));
+    display: block;
+    background: red;
+}
+.gg-heart::after,
+.gg-heart::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute; 
+    background: red;
+}
+.gg-heart::after {
+    right: -9px;
+    transform: rotate(90deg);
+    top: 5px;
+    background: red;
+}
+.gg-heart::before {
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    left: -2px;
+    top: 3px;
+    background: red;
+}
